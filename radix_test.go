@@ -68,6 +68,7 @@ func TestQuaternaryDecoding(t *testing.T) {
 	utils.AssertEqual(t, uint64(9999999), Decode("212021121333", Quaternary))
 	utils.AssertEqual(t, uint64(18446744073709551615), Decode("33333333333333333333333333333333", Quaternary))
 }
+
 func TestOctalDecoding(t *testing.T) {
 	utils.AssertEqual(t, uint64(0), Decode("0", Octal))
 	utils.AssertEqual(t, uint64(123), Decode("173", Octal))
